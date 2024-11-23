@@ -1,0 +1,230 @@
+.sec {
+    padding: 20px 10%;
+}
+
+.header {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 10px 20px;
+    background-color: #f8f8f8;
+}
+
+.logo img {
+    max-width: 150px; 
+    height: auto; 
+    border: 1px solid black;
+    margin: 10px;
+}
+
+
+.product {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 50px;
+}
+
+.product .card {
+    width: 100%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    border: 1px solid #000;
+    padding: 15px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    background-color: rgb(175, 9, 175);
+    color: rgb(154, 107, 115);
+}
+.product .card:hover {
+    background-color: aquamarine;
+    opacity: 0.8px;
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.product .card img {
+    height: 250px;
+    width: 80%;
+    border-radius: 20px;
+    border: 1px solid #007bff;
+}
+
+.product .card .desc {
+    padding: 10px 20px;
+    opacity: 0.85;
+    color: rgb(3, 19, 13);
+    font-weight: bold;
+}
+
+.product .card .title {
+    font-weight: 700;
+    font-size: 22px;
+    color: #3b0f0f;
+    padding: 10px 0;
+}
+
+.product .card .box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: rgb(149, 139, 139);
+    border-radius: 8px;
+}
+
+.product .card .box .price {
+    color: #222222;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.product .card .box .btn {
+    font-size: 14px;
+    color: #ffffff;
+    padding: 10px 18px;
+    font-weight: 600;
+    background-color: #555cc5;
+    border: none;
+    border-radius: 30px;
+    transition: 0.3s ease;
+}
+
+.product .card .box .btn:hover {
+    cursor: pointer;
+    background-color: #6e74c9;
+    color: rgb(10, 7, 7);
+}
+.product .card .box .btn:active {
+    background-color: rgb(229, 226, 26);
+    opacity: 0.8px;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e18bf1;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #222222;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.container {
+    background-color: rgb(92, 171, 156);
+    padding: 30px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    max-width: 900px;
+    border-radius: 12px;
+    color: rgb(19, 19, 69);
+    font-weight: 600;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+th, td {
+    border: 1px solid #e0e0e0;
+    padding: 15px;
+    text-align: center;
+    background-color: #aeaae3;
+}
+
+th {
+    background-color: #aeaae3;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: 0.3s ease;
+}
+button:hover {
+    background-color: #c0392b;
+}
+
+.remove-button {
+    background-color: rgb(186, 24, 70);
+    border: none;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;  
+}
+
+.remove-button:hover {
+    background-color: #c0392b;
+}
+
+input[type="text"], input[type="number"], input[type="date"] {
+    background-color: #52766e;
+    width: 100%;
+    color: white;
+    padding: 10px 1px;
+    margin: 10px;
+    border: 1px solid #baea8a;
+    border-radius: 4px;
+    font-size: 14px;
+    border-color: #555cc5;
+    outline: none;
+}
+
+
+.calculateBtn {
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.calculatBtn:hover {
+    background-color: #dbe61c;
+    color: #000;
+}
+
+.printBtn {
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: 1px solid #000;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.printBtn:hover{
+    background-color: #dbe61c;
+    color: #000;
+}
+@media print {
+    .remove-button, .printBtn, button {
+        display: none;
+    }
+    .container {
+        border: none;
+        box-shadow: none;
+    }
+    th, td {
+        border: 1px solid #000;
+    }
+}
